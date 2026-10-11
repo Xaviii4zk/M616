@@ -9,9 +9,14 @@ body {
 }
 
 main {
-    padding: 30px;
     margin: auto;
     width: 1440px;
+    background-color: #f8fafc;
+    padding-bottom: 25px;
+}
+
+.main2 {
+    margin-left: 0px;
 }
 
 header {
@@ -112,6 +117,7 @@ header {
     height: 50px;
     border-radius: 18px;
     padding: 50px;
+    margin-bottom: -50px;
 }
 
 .negro {
@@ -119,11 +125,276 @@ header {
     background-color: #263746;
 }
 
-.negro ,.php , .javascript, .react, .htmlcss, .docker, .bbdd, .projectes {
+.negro ,.php, .javascript, .react, .htmlcss, .docker, .bbdd, .projectes {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95px;
+    height: 40px;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.php2, .javascript2, .react2, .htmlcss2, .docker2, .bbdd2, .projectes2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 95px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.php, .php2 {
+    color: #2864A0;
+    background-color: #DCEBFA;
+}
+
+.javascript, .javascript2 {
+    color: #3F3F3F; 
+    background-color: #F9E5A8;
+}
+
+.react, .react2 {
+    color:#087E9F;
+    background-color:  #BDEEF5;
+}
+
+.htmlcss, .htmlcss2 {
+    color: #286B4C;
+    background-color:  #CBEEDC;
+}
+
+.docker, .docker2{
+    color: #633D9C;
+    background-color: #DCC9F7;
+}
+
+.bbdd, .bbdd2 {
+    color: #8E3333;
+    background-color: #F5C9C9;
+}
+
+.projectes, .projectes2 {
+    color: #9C2C62;
+    background-color: #F5D1E3;
+}
+
+.tarjetas {
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+    width: 1450px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    min-height: 300px;
+    border: 1px solid #D9E0E7;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.cabeceraTar {
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    gap: 15px;
+}
+
+.cuerpoTar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    flex: 1;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+
+.cabeceraTar p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #263746;
+}
+
+.titulosCat {
+    font-size: 20px;
+    font-weight: bold;
+    color: #071A2F;
+}
+
+.cuerpoTar .titulosCat {
+    align-self: flex-start;
+}
+
+.cuerpoTar p {
+    font-size: 14px;
+    color: #5A6B7E;
+    line-height: 22px;
+    width: 90%;
+    align-self: flex-start;
+}
+
+.cuerpoTar img {
+    width: 80%;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.pieTar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto;
+    padding: 15px;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: none;
+}
+
+.pieTar p {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.pieTar i {
+    font-size: 12px;
+    color: black;
+}
+
+
+.panellsResum {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+    width: 93%;
+    margin-top: -30px;
+}
+
+.panell {
+    background-color: #FFFFFF;
+    border: 1px solid #E1E8EF;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.panell h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #071A2F;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.panell h2 i {
+    font-size: 25px;
+}
+
+.resumConceptes {
+    width: 41%;
+}
+
+.contingutResum {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.llistaAssignatures {
+    flex: 1;
+}
+
+.filaResum {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    color: #35465A;
+    font-size: 16px;
+}
+
+.filaResum strong {
+    margin-left: auto;
+    color: #071A2F;
+}
+
+.punt {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.punt.php { background-color: #6FA8DC; }
+.punt.javascript { background-color: #F1C232; }
+.punt.react { background-color: #4DD6E5; }
+.punt.htmlcss { background-color: #76D7A8; }
+.punt.docker { background-color: #A879E8; }
+.punt.bbdd { background-color: #ED999F; }
+.punt.projectes { background-color: #B28AD6; }
+
+.totalConceptes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #E1E8EF;
+    padding-left: 25px;
+    min-width: 150px;
+    min-height: 140px;
+}
+
+.totalConceptes p {
+    color: #65758A;
+    font-size: 15px;
+    text-align: center;
+}
+
+.totalConceptes strong {
+    font-size: 38px;
+    color: #071A2F;
+}
+
+.panellAssignatures {
+    width: 31.5%;
+}
+
+.panellAssignatures i {
+    color: blue;
+}
+
+.panellDestacats i{
+    color: red;
+}
+
+.llistaEtiquetes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.llistaEtiquetes .etiqueta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
     height: 40px;
     border-radius: 18px;
     font-size: 14px;
@@ -135,27 +406,27 @@ header {
     background-color: #DCEBFA;
 }
 
-.javascript {
-    color: #3F3F3F; 
+ .javascript {
+    color: #3F3F3F;
     background-color: #F9E5A8;
 }
 
-.react {
-    color:#087E9F;
-    background-color:  #BDEEF5;
+ .react {
+    color: #087E9F;
+    background-color: #BDEEF5;
 }
 
 .htmlcss {
     color: #286B4C;
-    background-color:  #CBEEDC;
+    background-color: #CBEEDC;
 }
 
-.docker {
+ .docker {
     color: #633D9C;
     background-color: #DCC9F7;
 }
 
-.bbdd {
+ .bbdd {
     color: #8E3333;
     background-color: #F5C9C9;
 }
@@ -163,4 +434,27 @@ header {
 .projectes {
     color: #9C2C62;
     background-color: #F5D1E3;
+}
+
+.panellDestacats {
+    width: 24%;
+}
+
+.llistaDestacats {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.filaDestacat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #35465A;
+    font-size: 16px;
+}
+
+.filaDestacat i {
+    color: #F1B900;
+    font-size: 19px;
 }
