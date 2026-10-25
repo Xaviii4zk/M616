@@ -1,0 +1,369 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 105px;
+    background-color: #122d49;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    border-top: 2px solid #d9dfe5;
+    border-bottom: 4px solid #0b3544;
+    box-shadow: 0 4px 0 #f28c28;
+    font-family: Arial, sans-serif;
+    color: #f1f4f8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-icono {
+    width: 59px;
+    height: 59px;
+    background-color: #f7942e;
+    color: #17304b;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo-texto h2 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.logo-texto p {
+    font-size: 16px;
+    color: #c7d1dd;
+}
+
+.titulo-header p {
+    font-size: 18px;
+    color: #c7d1dd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fc;
+    color: #192d42;
+}
+
+.contenidor {
+    width: 100%;
+    padding: 40px 4.4%;
+    border-top: 4px solid #f7942e;
+}
+
+.presentacio {
+    background-color: #153454;
+    color: #f8fafc;
+    border-radius: 27px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.etiqueta {
+    color: #f7942e;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 17px;
+}
+
+.presentacio h1 {
+    font-size: 48px;
+    margin-bottom: 13px;
+}
+
+.descripcio {
+    font-size: 18px;
+    color: #d0dce9;
+}
+
+.boto {
+    display: inline-block;
+    background-color: #f7942e;
+    color: #19324c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 16px 22px;
+    border-radius: 11px;
+    white-space: nowrap;
+}
+
+.estadistiques {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 57px;
+}
+
+.estadistica {
+    background-color: #ffffff;
+    border: 1px solid #e0e6eb;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.estadistica p {
+    color: #77818b;
+    font-size: 17px;
+}
+
+.estadistica span {
+    color: #153454;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.projectes .etiqueta {
+    margin-bottom: 19px;
+}
+
+.projectes h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.llistat-projectes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projecte {
+    width: 49%;
+    height: 280px;
+    padding: 20px 1.4%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #e0e6eb;
+    border-top: 4px solid #153454;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(21, 52, 84, 0.06);
+    justify-content: space-between;
+}
+
+.estadoyhoras {
+    display: flex;
+    justify-content: space-between;
+}
+
+.estadoyhoras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.estadoyhoras h3 {
+    color: #687582;
+    font-size: 20px;
+}
+
+.estat {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.estat--pendent {
+    background-color: #fff0c2;
+    color: #745719;
+}
+
+.estat--proces {
+    background-color: #e0efff;
+    color: #24547d;
+}
+
+.estat--acabat {
+    background-color: #d8f4e7;
+    color: #22674b;
+}
+
+.contingut h2 {
+    font-size: 23px;
+    color: #192d42;
+    margin-bottom: 14px;
+}
+
+.contingut p {
+    color: #161717;
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contingut span {
+    color: #78818b;
+}
+
+.contingut .etiqueta {
+    display: block;
+    color: #29445e;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.botones form {
+    display: flex;
+    gap: 12px;
+}
+
+.botones button, .botones a {
+    border: none;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botones a {
+    background-color: #153454;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.botones button{
+    background-color: #fdebed;
+    color: #a83d4c;
+}
+
+
+.formulari-projecte {
+    background-color: #ffffff;
+    border: 1px solid #e0e6eb;
+    border-radius: 22px;
+    padding: 40px 34px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 5px 20px rgba(21, 52, 84, 0.05);
+    width: 99%;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.formulari-info {
+    width: 38%;
+}
+
+.formulari-info h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #192d42;
+}
+
+.descripcio-formulari {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #586574;
+    margin-bottom: 25px;
+}
+
+.avís {
+    background-color: #fff6d9;
+    border-left: 4px solid #f7942e;
+    padding: 15px 13px;
+    color: #75623a;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.formulari {
+    flex: 1;
+}
+
+.camp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.camp label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #263747;
+    margin-bottom: 9px;
+}
+
+.camp input,
+.camp select {
+    width: 100%;
+    height: 49px;
+    padding: 0 13px;
+    border: 1px solid #cbd0d5;
+    border-radius: 9px;
+    background-color: #ffffff;
+    color: #192d42;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.camp input:focus,
+.camp select:focus {
+    outline: 2px solid #f7942e;
+    border-color: #f7942e;
+}
+
+.camps-dobles {
+    display: flex;
+    gap: 16px;
+}
+
+.camps-dobles .camp {
+    width: 50%;
+}
+
+.boto-formulari {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7942e;
+    color: #19324c;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boto-formulari:hover {
+    background-color: #e98520;
+}
