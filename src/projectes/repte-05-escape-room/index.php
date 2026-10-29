@@ -1,31 +1,20 @@
 <?php 
 
 session_start();
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["username"]) && isset($_POST["dificultat"])) {
-    $username = $_POST["username"];
-    $_SESSION["username"] = $username;
-
-
-    if ($_POST["dificultat"] == "facil") {
-    $nivellfacil = $_POST["dificultat"];
-    $_SESSION["dificultat"] = $nivellfacil;
-
-    }
-
-    if ($_POST["dificultat"] == "mig") {
-    $nivellmig = $_POST["dificultat"];
-    $_SESSION["dificultat"] = $nivellmig;
-
-    }
-
-    if ($_POST["dificultat"] == "dificil") {
-    $nivelldificil = $_POST["dificultat"];
-    $_SESSION["dificultat"] = $nivelldificil;
-    }
-
+    $_SESSION["username"] = $_POST["username"];
     $_SESSION["dificultat"] = $_POST["dificultat"];
+    $_SESSION["nivells"] = 0;
 }
 
+if (!isset($_SESSION["dificultat"]) || (!isset($_SESSION["nivells"]) || $_SESSION["nivells"] >= 3)) {
+
+} else {
+    header("Location: room.php");
+    exit;
+}
 
 ?>
 
